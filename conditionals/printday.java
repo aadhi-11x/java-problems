@@ -1,0 +1,38 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        if(a == 0){
+            System.out.printf("Sunday");}
+         else if(a == 1){
+                System.out.printf("Monday");
+        }
+        else if(a == 2){
+            System.out.printf("Tuesday");
+        }
+        else if(a == 3){
+            System.out.printf("Wednesday");
+        }
+        else if(a == 4){
+            System.out.printf("Thursday");
+        }
+        else if(a == 5){
+            System.out.printf("Friday");
+        }
+        else if(a == 6){
+         System.out.printf("Saturday");
+        }
+        else {
+         System.out.printf("Invalid");
+        }
+            
+    }
+}
