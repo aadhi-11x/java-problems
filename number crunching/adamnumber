@@ -1,0 +1,31 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+    public static int reverse(int n) {
+        int rev = 0;
+        while (n > 0) {
+            rev = rev * 10 + (n % 10);
+            n = n / 10;
+        }
+        return rev;
+    }
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int num = sc.nextInt(); 
+        int square = num * num;
+        int revNum = reverse(num);
+        int revSquare = revNum * revNum; 
+        int revOfSquare = reverse(square);
+        if (revOfSquare == revSquare) {
+            System.out.println("Adam Number");
+        } else {
+            System.out.println("Not a adam number");
+        }
+
+        sc.close();
+    }
+}
